@@ -1,0 +1,245 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to right, #9ed4ef, #d9f6d7);
+  color: #2d0036;
+}
+
+
+nav {
+  background-color: #060606;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+}
+.nav-left h1 {
+  color: #fff;
+  font-size: 26px;
+  margin-left: 20px;
+}
+.nav-right ul {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+  
+}
+.nav-right ul li {
+  margin: 0 15px;
+  
+}
+.nav-right ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.nav-right ul li a:hover {
+  transform: scale(1.05);
+  background-color: #f6f2f7;
+   border-radius:10px;
+}
+
+
+section h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 40px 0 25px;
+  color: #0c0112;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+#home {
+  background: linear-gradient(to right, #f7f4f8, #c0f3fc);
+}
+#home .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 20px;
+  justify-content: center;
+  align-items: center;
+}
+#home .left img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(14, 14, 14, 0.2);
+  transition: transform 0.3s ease;
+}
+#home .left img:hover {
+  transform: scale(1.05);
+}
+#home .right {
+  flex: 1;
+  text-align: center;
+}
+#home .right h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #0b0b0b;
+}
+#home .right p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #011f2d;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.left, .right {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+.left img, .right img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+
+#about .left img {
+  margin-left: 40px;
+  width: 330px;
+  height: auto;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+.card {
+  width: 240px;
+  padding: 18px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(128, 0, 128, 0.1);
+}
+.card:hover {
+  transform: translateY(-10px);
+  background: #f3e5f5;
+  box-shadow: 0 12px 25px rgba(128, 0, 128, 0.2);
+}
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.card img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+.card p {
+  color: #4a0072;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+#about .right {
+  text-align: center;
+}
+#about .right ul {
+  text-align: left;
+  display: inline-block;
+}
+
+
+#resume {
+  text-align: center;
+  margin-top: 40px;
+}
+#resume .btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #090909;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+#resume .btn:hover {
+  background-color: #0e033b;
+}
+
+
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+#contact .contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+.contact-links img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.contact-links img:hover {
+  transform: scale(1.2);
+}
+
+
+footer {
+  background: #0b0b0b;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-right ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .nav-left h1 {
+    margin: 0;
+  }
+  #home .right h1 {
+    font-size: 2.4rem;
+  }
+  #about .left img {
+    margin-left: 0;
+  }
+}
